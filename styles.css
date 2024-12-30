@@ -5,7 +5,11 @@ body, html {
     height: 100%;
     font-family: "DM Sans","Figtree", "Poppins", Arial, Helvetica, sans-serif;
 }
+#quotes{
 
+size:1em;
+
+}
 .container {
     display: flex;
     height: 100vh; /* Full viewport height */
