@@ -79,5 +79,6 @@ p {
 }
 .divider {
     width: 5px;
+    height:20pt;
     background-color: #ffffff; /* Vertical divider color */
 }
