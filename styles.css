@@ -12,7 +12,7 @@ body, html {
 }
 
 .gradient-background {
-    background: linear-gradient(69deg,#ff0000,#ff7700,#fffc00,#1eff00,#002eff,#9a00ff,#002eff,#1eff00,#fffc00,#ff7700,#ff0000);
+    background: linear-gradient(69deg,#ff0000,#ff7700,#E5C339,#1eff00,#002eff,#9a00ff,#002eff,#1eff00,#fffc00,#ff7700,#ff0000);
     background-size: 69420% 69420%;
     animation: gradient-animation 69s ease infinite;
   }
