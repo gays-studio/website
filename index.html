@@ -50,17 +50,19 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     // Select a random quote from the array
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const random = quotes[Math.floor(Math.random() * quotes.length)];
 
     // title
-    document.title = `gays.studio ~ ${randomQuote}`;
+    document.title = `gays.studio ~ ${random}`;
+
+    document.getElementById("quotes").innerText = random;
   });
     </script>
     <div class="container">
         <div class="left-content">
             <!-- Content on the left side -->
             <h2>welcome.</h2>
-            <p>This is some introductory content.</p>
+            <p id="quotes">This is some introductory content.</p>
         </div>
         <div class="right-content">
             <!-- About me and other information on the right side -->
