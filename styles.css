@@ -11,6 +11,25 @@ body, html {
     height: 100vh; /* Full viewport height */
 }
 
+.gradient-background {
+    background: linear-gradient(69deg,#ff0000,#ff7700,#fffc00,#1eff00,#002eff,#9a00ff,#002eff,#1eff00,#fffc00,#ff7700,#ff0000);
+    background-size: 69420% 69420%;
+    animation: gradient-animation 69s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
 .left-content {
     text-align: center;
     width: 30%;
