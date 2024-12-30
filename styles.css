@@ -54,11 +54,15 @@ body, html {
     padding: 25px;
     box-sizing: border-box;
 }
+p, h1 {
 
+    color:white;
+}
 .right-content {
     width: 70%;
     padding: 25px;
     box-sizing: border-box;
+    background-color:#b37682;
 }
 
 /* Optional styling for better appearance */
