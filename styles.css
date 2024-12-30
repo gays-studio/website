@@ -73,3 +73,7 @@ h1, h2 {
 p {
     line-height: 1.6;
 }
+.divider {
+    width: 5px;
+    background-color: #ccc; /* Vertical divider color */
+}
