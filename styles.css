@@ -99,7 +99,7 @@ p {
 
   .divider {
     left: 0; /* Reset position */
-    width: 30%;
+    width: 50%;
     height: 5px; /* Horizontal divider */
 }
 
