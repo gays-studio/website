@@ -104,6 +104,6 @@ p {
 }
 
   p, h1, h2 {
-      font-size: 3rem; /* Smaller text size */
+      font-size: 5rem; 
   }
 }
