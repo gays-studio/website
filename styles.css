@@ -83,3 +83,25 @@ p {
     height:100vh;
     background-color: #ffffff; /* Vertical divider color */
 }
+
+
+/* thanks github copilot :3 */
+@media (max-width: 500px) {
+  .container {
+      flex-direction: column; /* Stack the content vertically */
+  }
+  
+  .left-content, .right-content {
+      width: 100%; /* Take full width */
+      text-align: center;
+  }
+
+  .divider {
+      width: 100%;
+      height: 5px; /* Horizontal divider */
+  }
+
+  p, h1, h2 {
+      font-size: 0.8rem; /* Smaller text size */
+  }
+}
