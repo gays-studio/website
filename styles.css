@@ -7,11 +7,12 @@ body, html {
 }
 #quotes{
 
-size:1rem;
+size: 3rem;
 
 }
 .container {
     display: flex;
+    flex-direction: row; 
     height: 100vh; /* Full viewport height */
 }
 
@@ -57,6 +58,7 @@ size:1rem;
   /*  background-color: #f4f4f4; /* Light grey background */ 
     padding: 25px;
     box-sizing: border-box;
+   /* border-right: 5px solid #ffffff; */
 }
 p, h1,h2 {
 
@@ -79,6 +81,30 @@ p {
 }
 .divider {
     width: 5px;
-    height:100%;
+    height:100vh;
     background-color: #ffffff; /* Vertical divider color */
+}
+
+
+/* thanks github copilot :3 */
+@media only screen and (max-width: 500px) {
+  .container {
+      flex-direction: column; /* Stack the content vertically */
+  }
+  
+  .left-content, .right-content {
+      width: 100%; /* Take full width */
+      text-align: center;
+  }
+
+  .divider {
+    left: 0; /* Reset position */
+    width: 50%;
+    height: 5px; /* Horizontal divider */
+}
+
+p,h1,h2{
+
+  font-size:1.4rem;
+}
 }
