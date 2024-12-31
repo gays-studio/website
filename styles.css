@@ -7,7 +7,7 @@ body, html {
 }
 #quotes{
 
-size:1rem;
+size: 3rem;
 
 }
 .container {
@@ -104,6 +104,6 @@ p {
 }
 
   p, h1, h2 {
-      font-size: 1.2rem; /* Smaller text size */
+      font-size: 3rem; /* Smaller text size */
   }
 }
