@@ -103,7 +103,11 @@ p {
     height: 5px; /* Horizontal divider */
 }
 
-  p, h1, h2 {
-      font-size: 5rem; 
+h1,h2{
+
+  font-size:7rem;
+}
+  p {
+      font-size: 2rem; 
   }
 }
