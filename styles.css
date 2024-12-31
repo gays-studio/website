@@ -97,11 +97,11 @@ p {
   }
 
   .divider {
-      width: 100%;
+      width: 100vh;
       height: 5px; /* Horizontal divider */
   }
 
   p, h1, h2 {
-      font-size: 0.8rem; /* Smaller text size */
+      font-size: 0.9rem; /* Smaller text size */
   }
 }
