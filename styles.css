@@ -57,7 +57,7 @@ size:1rem;
   /*  background-color: #f4f4f4; /* Light grey background */ 
     padding: 25px;
     box-sizing: border-box;
-    border-right: 5px dashed #ffffff; 
+    border-right: 5vh solid #ffffff; 
 }
 p, h1,h2 {
 
