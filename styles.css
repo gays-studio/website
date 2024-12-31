@@ -79,6 +79,7 @@ p {
     line-height: 1.6;
 }
 .divider {
+  flex-shrink: 0;
     width: 5px;
     height:100vh;
     background-color: #ffffff; /* Vertical divider color */
@@ -98,6 +99,7 @@ p {
 
   .divider {
       width: 100vh;
+      flex-shrink: 0;
       height: 5px; /* Horizontal divider */
   }
 
