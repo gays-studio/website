@@ -60,7 +60,7 @@ size: 3rem;
     box-sizing: border-box;
    /* border-right: 5px solid #ffffff; */
 }
-p, h1,h2 {
+p, h1,h2,h4 {
 
     color:white;
 }
