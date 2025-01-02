@@ -89,8 +89,11 @@ p {
 /* thanks github copilot :3 */
 @media only screen and (max-width: 500px) {
   .container {
-      flex-direction: column; /* Stack the content vertically */
-  }
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center; /* Centers the cards within the container */
+}
   
   .left-content, .right-content {
       width: 100%; /* Take full width */
@@ -107,4 +110,30 @@ p,h1,h2{
 
   font-size:1.4rem;
 }
+}
+
+@media (max-width: 768px) {
+  .right-content {
+      flex-direction: column; /* Stacks cards vertically on smaller screens */
+      align-items: center; /* Centers them within the container */
+  }
+}
+
+.member-card {
+  position: relative;
+  margin-bottom: 20px;
+  width: 340px; /* Matches iframe width */
+  flex: 1 1 auto; /* Allows cards to adjust size if needed */
+}
+
+.info-overlay {
+  position: absolute;
+  top: 80px; /* Just below the iframe */
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
