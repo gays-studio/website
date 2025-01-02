@@ -5,11 +5,11 @@ body, html {
     height: 100%;
     font-family: "DM Sans","Figtree", "Poppins", Arial, Helvetica, sans-serif;
 }
-#quotes{
+/* #quotes{
 
-size: 3rem;
+font-size: 3rem;
 
-}
+} */
 .container {
     display: flex;
     flex-direction: row; 
