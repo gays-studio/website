@@ -65,9 +65,9 @@ p, h1,h2 {
     color:white;
 }
 .right-content {
-    width: 70%;
-    padding: 25px;
-    box-sizing: border-box;
+  width: 70%;
+  padding: 25px;
+  box-sizing: border-box;
   /*  background-color:#b37682; */
 }
 
@@ -114,26 +114,44 @@ p,h1,h2{
 
 @media (max-width: 768px) {
   .right-content {
-      flex-direction: column; /* Stacks cards vertically on smaller screens */
-      align-items: center; /* Centers them within the container */
+      flex-direction: column;
+      align-items: center;
   }
 }
 
 .member-card {
   position: relative;
-  margin-bottom: 20px;
-  width: 340px; /* Matches iframe width */
-  flex: 1 1 auto; /* Allows cards to adjust size if needed */
+  width: 100px;
+  flex: 1 1 auto; /* Flex item takes available space */
+  margin: 10px; /* Adds spacing between cards */
+  display: flex;
+  flex-direction: column; /* Ensures content inside the card stacks vertically */
+  align-items: center; /* Centers content inside each card */
 }
 
-.info-overlay {
-  position: absolute;
-  top: 80px; /* Just below the iframe */
+.member-card img {
+  width: 100%; /* Ensures the image fills the card's width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for better appearance */
+}
+
+.member-card .info-overlay {
+  margin-top: 10px; /* Adds spacing above the info box */
+  position: static; /* Static positioning to avoid overlapping */
   width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 0.9rem;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: flex-start; /* Aligns cards to the left (change to center if needed) */
 }
