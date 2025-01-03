@@ -139,13 +139,14 @@ p {
 }
 
 .member-card .info-overlay {
-  width: 100%; /* Take full width on smaller screens */
-  font-size: 0.9rem; /* Adjust font size for smaller screens */
+  width: 90%; /* Ensure overlay fits */
+  font-size: 0.9rem; /* Adjust font size for readability */
 }
   .member-card {
-      width: auto; /* Ensures the card takes up available space */
+      width: 100%; /* Ensures the card takes up available space */
+      max-width:none;
       flex: 1 1 auto; /* Flex item takes available space */
-      margin: 10px; /* Adds spacing between cards */
+      margin: 10px 0; /* Adds spacing between cards */
       display: flex;
       flex-direction: column; /* Ensures content inside the card stacks vertically */
       align-items: center; /* Centers content inside each card */
@@ -161,12 +162,13 @@ p {
 
 .member-card {
   position: relative;
-  width: 100px;
+  width: 100%; /* Ensure the card takes up available width */
+  max-width: 340px; /* Limit the max width */
   flex: 1 1 auto; /* Flex item takes available space */
   margin: 10px; /* Adds spacing between cards */
   display: flex;
-  flex-direction: column; /* Ensures content inside the card stacks vertically */
-  align-items: center; /* Centers content inside each card */
+  flex-direction: column;
+  align-items: center;
 }
 
 .member-card iframe {
