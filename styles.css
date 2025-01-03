@@ -19,7 +19,7 @@ font-size: 1.2rem;
 .gradient-background {
     background: linear-gradient(69deg,#fe9494,#ffc783,#fff683,#69cb86,#83a8ff,#c56ad4);
     background-size: 69420% 69420%;
-    animation: gradient-animation 69s ease infinite;
+    animation: gradient-animation 36s ease infinite;
   }
   
   @keyframes gradient-animation {
