@@ -152,10 +152,10 @@ p {
         width: 100%; /* Ensures the iframe fills the card's width */
         max-width: 340px; /* Ensures iframe doesn't exceed 340px */
         margin: 0; /* Remove any default margins */
-        padding: 0; /* Remove any default padding */
+        padding: 0; /* Remove any default padding */ /*/
     }
 
-} /*
+} */
 
 .member-card {
   position: relative;
