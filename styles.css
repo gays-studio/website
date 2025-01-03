@@ -93,11 +93,11 @@ p {
     flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
     gap: 20px; /* Adds space between cards */
     justify-content: center; /* Centers the cards within the container */
-  }
+}
   .member-card {
-    width: 100%; /* Ensures the card takes up available space */
+    width: 90%; /* Adjusted width for smaller screens */
     flex: 1 1 auto; /* Flex item takes available space */
-    margin: 10px; /* Adds spacing between cards */
+    margin: 5px; /* Smaller margin for smaller screens */
     display: flex;
     flex-direction: column; /* Ensures content inside the card stacks vertically */
     align-items: center; /* Centers content inside each card */
@@ -106,7 +106,7 @@ p {
 .member-card iframe {
     width: 100%; /* Ensures the iframe fills the card's width */
     height: auto; /* Maintains aspect ratio */
-    max-width: 340px; /* Ensures iframe doesn't exceed 340px */
+    max-width: 300px; /* Smaller max-width for smaller screens */
 }
   .left-content, .right-content {
     width: 100%; /* Take full width */
