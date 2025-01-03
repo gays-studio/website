@@ -132,7 +132,7 @@ p {
 
   .mobile-divider {
     display: block;
-    height: 1.2rem; /* Adjust height to make it thinner */
+    height: 0.5rem; /* Adjust height to make it thinner */
     width: 100%; /* Span across the full width */
     background-color:#ffffff;
     position: relative;
