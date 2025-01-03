@@ -104,6 +104,7 @@ p {
     align-items: center; /* Centers content inside each card */
 }
 }
+}
   
   .left-content, .right-content {
       width: 100%; /* Take full width */
