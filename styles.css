@@ -107,6 +107,8 @@ p {
       display: flex;
       flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
       gap: 20px; /* Adds space between cards */
+      flex-direction: column; /* Stack items vertically */
+      width: 100%;
       justify-content: center; /* Centers the cards within the container */
   }
 
@@ -123,11 +125,12 @@ p {
       font-size: 1.4rem;
   }
 
-  .member-cards {
-      display: flex;
-      flex-direction: column; /* Stack cards vertically */
-      align-items: center; /* Center cards horizontally */
-      width: 100%; /* Full width to ensure proper alignment */
+.member-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+    width: 100%; /* Full width */
+    gap: 20px; /* Add spacing between cards */
   }
 
   .mobile-divider {
@@ -164,7 +167,7 @@ p {
   position: relative;
   width: 100%; /* Ensure the card takes up available width */
   max-width: 340px; /* Limit the max width */
-  flex: 1 1 auto; /* Flex item takes available space */
+  flex: 1 1 calc(33.333% - 20px); /* Flex item takes available space */
   margin: 10px; /* Adds spacing between cards */
   display: flex;
   flex-direction: column;
@@ -200,11 +203,9 @@ p {
   text-align: center;
 }
 
-
-
 .member-cards {
   display: flex;
   flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
   gap: 20px; /* Adds spacing between cards */
-  justify-content: flex-start; /* Aligns cards to the left (change to center if needed) */
+  justify-content: center; /* Aligns cards to the left (change to center if needed) */
 }
