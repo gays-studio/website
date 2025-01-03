@@ -104,17 +104,18 @@ p {
 }
 
 .member-card {
-  width: 100%; /* Ensures the card takes up the full width of the screen */
-  flex: 1 1 auto; /* Flex item takes available space */
-  margin: 5px 0; /* Smaller margin for smaller screens */
-  display: flex;
-  flex-direction: column; /* Ensures content inside the card stacks vertically */
-  align-items: center; /* Centers content inside each card */
+  width: 100%; /* Ensures the card takes up available space */
+    flex: 1 1 auto; /* Flex item takes available space */
+    margin: 10px; /* Adds spacing between cards */
+    display: flex;
+    flex-direction: column; /* Ensures content inside the card stacks vertically */
+    align-items: center; /* Centers content inside each card */
 }
 
 .member-card iframe {
   width: 100%; /* Ensures the iframe fills the card's width */
-  max-width: 100%; /* Ensures iframe doesn't exceed card's width */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 340px; /* Ensures iframe doesn't exceed 340px */
 }
   .left-content, .right-content {
     width: 100%; /* Take full width */
