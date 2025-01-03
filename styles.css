@@ -127,11 +127,11 @@ p {
   }
 
   #mobile-divider {
-    display: block; /* Make visible on mobile */
-    height: 2px;
-    background-color: #E6E6E6;
-    width: 90%; /* Advanced styling width */
-    margin: 0 auto; /* Center the divider */
+    display: block;
+        height: 2px;
+        background-color: red; /* Test visibility */
+        position: relative;
+        z-index: 10;
 }
   .member-card {
       width: auto; /* Ensures the card takes up available space */
