@@ -21,7 +21,10 @@ font-size: 1.2rem;
     background-size: 69420% 69420%;
     animation: gradient-animation 36s ease infinite;
   }
-  
+  #bruh{
+
+    width:1.2rem;
+  }
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
