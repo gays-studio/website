@@ -63,9 +63,10 @@ font-size: 1.2rem;
     box-sizing: border-box;
    /* border-right: 5px solid #ffffff; */
 }
+
 #mobile-divider {
   display: none; /* Hidden by default */
-  height: 5px; /* Height of the divider */
+  height: 5px !important; /* Height of the divider */
   width: 100%; /* Full width */
   background-color: #ffffff; /* Divider color */
   margin: 20px 0; /* Optional: spacing above and below the divider */
