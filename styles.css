@@ -95,13 +95,20 @@ p {
     gap: 20px; /* Adds space between cards */
     justify-content: center; /* Centers the cards within the container */
 }
-  .member-card {
-    width: 90%; /* Adjusted width for smaller screens */
-    flex: 1 1 auto; /* Flex item takes available space */
-    margin: 5px; /* Smaller margin for smaller screens */
-    display: flex;
-    flex-direction: column; /* Ensures content inside the card stacks vertically */
-    align-items: center; /* Centers content inside each card */
+.member-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center cards horizontally */
+  width: 100%; /* Full width to ensure proper alignment */
+}
+
+.member-card {
+  width: 90%; /* Adjusted width for smaller screens */
+  flex: 1 1 auto; /* Flex item takes available space */
+  margin: 5px; /* Smaller margin for smaller screens */
+  display: flex;
+  flex-direction: column; /* Ensures content inside the card stacks vertically */
+  align-items: center; /* Centers content inside each card */
 }
 
 .member-card iframe {
