@@ -183,6 +183,25 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto; /* Allow container to expand naturally */
+  }
+  .left-content, .right-content {
+      width: 100%; /* Full width for smaller screens */
+      padding: 15px; /* Reduce padding */
+  }
+  .divider {
+      display: none; /* Hide vertical divider */
+  }
+  .member-cards {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center;
+  }
+}
+
+
 @media (min-width: 769px) {
   .container {
       display: flex;
