@@ -17,7 +17,7 @@ font-size: 1.2rem;
 }
 
 .gradient-background {
-    background: linear-gradient(69deg,#ff0000,#ff7700,#E5C339,#1eff00,#002eff,#9a00ff,#002eff,#1eff00,#fffc00,#ff7700,#ff0000);
+    background: linear-gradient(69deg,#fe9494,#ffc783,#fff683,#69cb86,#83a8ff,#c56ad4);
     background-size: 69420% 69420%;
     animation: gradient-animation 69s ease infinite;
   }
