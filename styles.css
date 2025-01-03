@@ -133,6 +133,10 @@ p {
         position: relative;
         z-index: 10;
 }
+.member-card .info-overlay {
+  width: 100%; /* Take full width on smaller screens */
+  font-size: 0.9rem; /* Adjust font size for smaller screens */
+}
   .member-card {
       width: auto; /* Ensures the card takes up available space */
       flex: 1 1 auto; /* Flex item takes available space */
@@ -149,68 +153,6 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      height: auto; /* Allow container to expand naturally */
-  }
-  .left-content, .right-content {
-      width: 100%; /* Full width for smaller screens */
-      padding: 15px; /* Reduce padding */
-  }
-  .divider {
-      display: none; /* Hide vertical divider */
-  }
-  .member-cards {
-      flex-direction: column; /* Stack cards vertically */
-      align-items: center;
-  }
-}
-
-
-@media (min-width: 769px) {
-  .container {
-      display: flex;
-      flex-direction: row;
-      height: 100vh; /* Full viewport height */
-  }
-
-  .left-content {
-      text-align: center;
-      width: 30%;
-      padding: 25px;
-      box-sizing: border-box;
-  }
-
-  .right-content {
-      width: 70%;
-      padding: 25px;
-      box-sizing: border-box;
-  }
-
-  .member-cards {
-      display: flex;
-      flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
-      gap: 20px; /* Adds spacing between cards */
-      justify-content: flex-start; /* Aligns cards to the left (change to center if needed) */
-  }
-
-  .member-card {
-      position: relative;
-      width: 100px;
-      flex: 1 1 auto; /* Flex item takes available space */
-      margin: 10px; /* Adds spacing between cards */
-      display: flex;
-      flex-direction: column; /* Ensures content inside the card stacks vertically */
-      align-items: center; /* Centers content inside each card */
-  }
-
-  .member-card iframe {
-      width: 100%; /* Ensures the iframe fills the card's width */
-      height: auto; /* Maintains aspect ratio */
-      max-width: 340px; /* Ensures iframe doesn't exceed 340px */
-  }
-}
 
 .member-card {
   position: relative;
@@ -236,17 +178,19 @@ p {
 }
 
 .member-card .info-overlay {
-  margin-top: 10px; /* Adds spacing above the info box */
-  position: static; /* Static positioning to avoid overlapping */
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+    margin-top: 10px; /* Adds spacing above the info box */
+    position: relative; /* Avoid overlapping issues */
+    width: 90%; /* Responsive width */
+    max-width: 300px; /* Optional: Cap width */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1rem; /* Scale font size */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
+
 
 
 .member-cards {
