@@ -70,7 +70,7 @@ font-size: 1.2rem;
    /* border-right: 5px solid #ffffff; */
 }
 
-#mobile-divider {
+.mobile-divider {
   display: none; /* Hidden by default */
 }
 
@@ -116,9 +116,7 @@ p {
   }
 
   .divider {
-      left: 0; /* Reset position */
-      width: 100vh;
-      height: 5px; /* Horizontal divider */
+     display:none;
   }
 
   p, h1, h2 {
@@ -132,7 +130,7 @@ p {
       width: 100%; /* Full width to ensure proper alignment */
   }
 
-  #mobile-divider {
+  .mobile-divider {
     display: block;
     height: 2px; /* Adjust height to make it thinner */
     width: 100%; /* Span across the full width */
