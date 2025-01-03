@@ -95,15 +95,7 @@ p {
     justify-content: center; /* Centers the cards within the container */
 
   }
-       .member-card {
-    width: 100%; /* Ensures the card takes up available space */
-    flex: 1 1 auto; /* Flex item takes available space */
-    margin: 10px; /* Adds spacing between cards */
-    display: flex;
-    flex-direction: column; /* Ensures content inside the card stacks vertically */
-    align-items: center; /* Centers content inside each card */
-}
-}
+
 }
   
   .left-content, .right-content {
