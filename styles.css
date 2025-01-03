@@ -81,7 +81,8 @@ p {
 }
 .divider {
     width: 5px;
-    height:100vh;
+    min-height:100vh;
+    height:100%;
     background-color: #ffffff; /* Vertical divider color */
 }
 
