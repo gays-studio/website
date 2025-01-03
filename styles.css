@@ -133,7 +133,7 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .right-content {
       flex-direction: column;
       align-items: center;
@@ -155,7 +155,7 @@ p {
         padding: 0; /* Remove any default padding */
     }
 
-}
+} /*
 
 .member-card {
   position: relative;
