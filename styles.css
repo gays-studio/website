@@ -63,6 +63,14 @@ font-size: 1.2rem;
     box-sizing: border-box;
    /* border-right: 5px solid #ffffff; */
 }
+#mobile-divider {
+  display: none; /* Hidden by default */
+  height: 5px; /* Height of the divider */
+  width: 100%; /* Full width */
+  background-color: #ffffff; /* Divider color */
+  margin: 20px 0; /* Optional: spacing above and below the divider */
+}
+
 p, h1,h2 {
 
     color:white;
@@ -120,7 +128,9 @@ p {
       align-items: center; /* Center cards horizontally */
       width: 100%; /* Full width to ensure proper alignment */
   }
-
+  #mobile-divider {
+    display: block; /* Show the divider on small screens */
+}
   .member-card {
       width: auto; /* Ensures the card takes up available space */
       flex: 1 1 auto; /* Flex item takes available space */
