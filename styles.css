@@ -134,7 +134,7 @@ p {
     display: block;
     height: 1.2rem; /* Adjust height to make it thinner */
     width: 100%; /* Span across the full width */
-    color:#ffffff;
+    background-color:#ffffff;
     position: relative;
 }
 
