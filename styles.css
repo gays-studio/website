@@ -5,6 +5,12 @@ body, html {
     height: 100%;
     font-family: "DM Sans","Figtree", "Poppins", Arial, Helvetica, sans-serif;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 #quotes{
 
 font-size: 1.2rem;
@@ -128,9 +134,13 @@ p {
 
   #mobile-divider {
     display: block;
-        height: 2px;
-        position: relative;
+    height: 2px; /* Adjust height to make it thinner */
+    width: 100%; /* Span across the full width */
+    background-color: red; /* Change the color if needed */
+    position: relative;
+    margin: 10px 0; /* Add margin to create space above and below */
 }
+
 .member-card .info-overlay {
   width: 100%; /* Take full width on smaller screens */
   font-size: 0.9rem; /* Adjust font size for smaller screens */
