@@ -87,9 +87,8 @@ p {
 }
 
 
-/* thanks github copilot :3 */
-@media only screen and (max-width: 500px) {
-  .container {
+/* thanks github copilot :3 */@media only screen and (max-width: 500px) {
+    .container {
       display: flex;
       flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
       gap: 20px; /* Adds space between cards */
@@ -134,7 +133,7 @@ p {
   }
 }
 
-@@media (min-width: 501px) and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .container {
       display: flex;
       flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
@@ -198,6 +197,13 @@ p {
       width: 70%;
       padding: 25px;
       box-sizing: border-box;
+  }
+
+  .member-cards {
+      display: flex;
+      flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
+      gap: 20px; /* Adds spacing between cards */
+      justify-content: flex-start; /* Aligns cards to the left (change to center if needed) */
   }
 
   .member-card {
