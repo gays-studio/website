@@ -140,19 +140,19 @@ p {
   }
 
     .member-card {
-        width: 100%; /* Ensures the card takes up available space */
-        flex: 1 1 auto; /* Flex item takes available space */
-        margin: 10px 0; /* Adds spacing between cards */
-        display: flex;
-        flex-direction: column; /* Ensures content inside the card stacks vertically */
-        align-items: center; /* Centers content inside each card */
+     /*   width: 100%; /* Ensures the card takes up available space */
+      /*  flex: 1 1 auto; /* Flex item takes available space */
+      /*  margin: 10px 0; /* Adds spacing between cards */
+      /*  display: flex;
+      /*  flex-direction: column; /* Ensures content inside the card stacks vertically */
+      /*  align-items: center; /* Centers content inside each card */
     }
 
-    .member-card iframe {
+    /*.member-card iframe {
         width: 100%; /* Ensures the iframe fills the card's width */
-        max-width: 340px; /* Ensures iframe doesn't exceed 340px */
-        margin: 0; /* Remove any default margins */
-        padding: 0; /* Remove any default padding */ /*/
+      /*  max-width: 340px; /* Ensures iframe doesn't exceed 340px */
+       /* margin: 0; /* Remove any default margins */
+       /* padding: 0; /* Remove any default padding */ /*/ */*
     }
 
 } */
