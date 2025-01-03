@@ -129,9 +129,7 @@ p {
   #mobile-divider {
     display: block;
         height: 2px;
-        background-color: red; /* Test visibility */
         position: relative;
-        z-index: 10;
 }
 .member-card .info-overlay {
   width: 100%; /* Take full width on smaller screens */
