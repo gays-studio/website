@@ -132,11 +132,10 @@ p {
 
   .mobile-divider {
     display: block;
-    height: 2px; /* Adjust height to make it thinner */
+    height: 1.2rem; /* Adjust height to make it thinner */
     width: 100%; /* Span across the full width */
-    background-color: red; /* Change the color if needed */
+    color:#ffffff;
     position: relative;
-    margin: 10px 0; /* Add margin to create space above and below */
 }
 
 .member-card .info-overlay {
