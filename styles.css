@@ -93,25 +93,22 @@ p {
     flex-wrap: wrap; /* Ensures cards wrap if there isn't enough space */
     gap: 20px; /* Adds space between cards */
     justify-content: center; /* Centers the cards within the container */
-
   }
 
-}
-  
   .left-content, .right-content {
-      width: 100%; /* Take full width */
-      text-align: center;
+    width: 100%; /* Take full width */
+    text-align: center;
   }
 
   .divider {
     left: 0; /* Reset position */
     width: 100vh;
     height: 5px; /* Horizontal divider */
-}
+  }
 
-p,h1,h2{
-
-  font-size:1.4rem;
+  p, h1, h2 {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 768px) {
