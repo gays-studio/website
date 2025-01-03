@@ -172,30 +172,32 @@ p {
 }
 
 .member-card iframe {
-    width: 100%; /* Ensures the iframe fills the card's width */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 340px; /* Ensures iframe doesn't exceed 340px */
+  width: 100%; /* Ensures iframe fills the card's width */
+  height: auto;
+  max-width: 340px; /* Ensures iframe doesn't exceed 340px */
 }
+
 
 .member-card img {
-  width: 100%; /* Ensures the image fills the card's width */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners for the images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for better appearance */
+  width: 100%; /* Ensures image fills the card's width */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 .member-card .info-overlay {
-    margin-top: 10px; /* Adds spacing above the info box */
-    position: relative; /* Avoid overlapping issues */
-    width: 90%; /* Responsive width */
-    max-width: 300px; /* Optional: Cap width */
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 1rem; /* Scale font size */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
+  margin-top: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 
