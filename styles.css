@@ -104,11 +104,10 @@ p {
 /* thanks github copilot :3 */
 @media only screen and (max-width: 550px) {
     .container {
-     /* display: flex;*/
-      gap: 5px; 
+      display: flex;
+      gap: 20px; 
       flex-direction: column; 
       width: 100%;
-    /*  justify-content: center; */
   } 
 
   .left-content, .right-content {
