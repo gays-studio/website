@@ -167,7 +167,7 @@ p {
   position: relative;
   width: 100%; /* Ensure the card takes up available width */
   max-width: 340px; /* Limit the max width */
-  flex: 1 1 calc(33.333% - 25px); /* Flex item takes available space */
+  flex: 1 1 calc(30% - 25px); /* Flex item takes available space */
   margin: 10px; /* Adds spacing between cards */
   display: flex;
   flex-direction: column;
