@@ -14,8 +14,11 @@ body, html {
 #quotes{
 
 font-size: 1.2rem;
+/* #quotes{
 
-}
+font-size: 3rem;
+
+} */
 .container {
     display: flex;
     flex-direction: row; 
@@ -211,4 +214,5 @@ p {
   flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
   gap: 20px; /* Adds spacing between cards */
   justify-content: center; /* Aligns cards to the left (change to center if needed) */
+}
 }
