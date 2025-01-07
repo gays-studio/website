@@ -202,6 +202,8 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
+  word-wrap: break-word; /* Ensures long words wrap to the next line */
+  word-break: break-word; /* Ensures text breaks to fit the container */
 }
 
 .member-cards {
