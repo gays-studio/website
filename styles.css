@@ -103,13 +103,13 @@ p {
 
 /* thanks github copilot :3 */
 @media only screen and (max-width: 550px) {
-    /*.container {
-      display: flex;
-      gap: 20px; /* Adds space between cards */
-    /*  flex-direction: column; /* Stack items vertically */
-    /*  width: 100%; 
-      justify-content: center; /* Centers the cards within the container *
-  } */
+    .container {
+     /* display: flex;*/
+      gap: 5px; 
+      flex-direction: column; 
+      width: 100%;
+    /*  justify-content: center; */
+  } 
 
   .left-content, .right-content {
       width: 100%; /* Take full width */
