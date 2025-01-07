@@ -145,6 +145,8 @@ p {
   font-size: 0.9rem; /* Adjust font size for readability */
 }
   .member-card {
+    overflow-y: auto; 
+      max-height: 300px; /* Adjust the max height for mobile view */
       width: 100%; /* Ensures the card takes up available space */
       max-width:none;
       flex: 1 1 auto; /* Flex item takes available space */
@@ -171,6 +173,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .member-card iframe {
