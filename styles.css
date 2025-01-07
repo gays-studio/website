@@ -5,6 +5,15 @@ body, html {
     height: 100%;
     font-family: "DM Sans","Figtree", "Poppins", Arial, Helvetica, sans-serif;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#quotes{
+
+font-size: 1.2rem;
 /* #quotes{
 
 font-size: 3rem;
@@ -17,11 +26,14 @@ font-size: 3rem;
 }
 
 .gradient-background {
-    background: linear-gradient(69deg,#ff0000,#ff7700,#E5C339,#1eff00,#002eff,#9a00ff,#002eff,#1eff00,#fffc00,#ff7700,#ff0000);
+    background: linear-gradient(69deg,#fe9494,#ffc783,#fff683,#69cb86,#83a8ff,#c56ad4);
     background-size: 69420% 69420%;
-    animation: gradient-animation 69s ease infinite;
+    animation: gradient-animation 36s ease infinite;
   }
-  
+  .bruh{
+
+    width:17rem;
+  }
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -60,14 +72,19 @@ font-size: 3rem;
     box-sizing: border-box;
    /* border-right: 5px solid #ffffff; */
 }
+
+.mobile-divider {
+  display: none; /* Hidden by default */
+}
+
 p, h1,h2 {
 
     color:white;
 }
 .right-content {
-    width: 70%;
-    padding: 25px;
-    box-sizing: border-box;
+  width: 70%;
+  padding: 25px;
+  box-sizing: border-box;
   /*  background-color:#b37682; */
 }
 
@@ -81,30 +98,121 @@ p {
 }
 .divider {
     width: 5px;
-    height:100vh;
+    min-height:100vh;
+    height:150%;
     background-color: #ffffff; /* Vertical divider color */
 }
 
 
 /* thanks github copilot :3 */
-@media only screen and (max-width: 500px) {
-  .container {
-      flex-direction: column; /* Stack the content vertically */
-  }
-  
+@media only screen and (max-width: 550px) {
+    .container {
+      display: flex;
+      gap: 20px; 
+      flex-direction: column; 
+      width: 100%;
+  } 
+
   .left-content, .right-content {
       width: 100%; /* Take full width */
       text-align: center;
   }
 
   .divider {
-    left: 0; /* Reset position */
-    width: 100vh;
-    height: 5px; /* Horizontal divider */
+     display:none;
+  }
+
+  p, h1, h2 {
+      font-size: 1.4rem;
+  }
+
+.member-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+    width: 100%; /* Full width */
+    gap: 20px; /* Add spacing between cards */
+  }
+
+  .mobile-divider {
+    display: block;
+    height: 0.5rem; /* Adjust height to make it thinner */
+    width: 100%; /* Span across the full width */
+    background-color:#ffffff;
+    position: relative;
 }
 
-p,h1,h2{
+.member-card .info-overlay {
+  width: 90%; /* Ensure overlay fits */
+  font-size: 0.9rem; /* Adjust font size for readability */
+}
+  .member-card {
+    overflow-y: auto; 
+      max-height: 650px; /* Adjust the max height for mobile view */
+      width: 100%; /* Ensures the card takes up available space */
+      max-width:none;
+      flex: 1 1 auto; /* Flex item takes available space */
+      margin: 10px 0; /* Adds spacing between cards */
+      display: flex;
+      flex-direction: column; /* Ensures content inside the card stacks vertically */
+      align-items: center; /* Centers content inside each card */
+  }
 
-  font-size:1.4rem;
+  .member-card iframe {
+      width: 100%; /* Ensures the iframe fills the card's width */
+      height: auto; /* Maintains aspect ratio */
+      max-width: 340px; /* Ensures iframe doesn't exceed 340px */
+  }
+}
+
+
+.member-card {
+  position: relative;
+  width: 100%; /* Ensure the card takes up available width */
+  max-width: 340px; /* Limit the max width */
+  flex: 1 1 calc(30% - 25px); /* Flex item takes available space */
+  margin: 10px; /* Adds spacing between cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.member-card iframe {
+  width: 100%; /* Ensures iframe fills the card's width */
+  height: auto;
+  max-width: 340px; /* Ensures iframe doesn't exceed 340px */
+}
+
+
+.member-card img {
+  width: 100%; /* Ensures image fills the card's width */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.member-card .info-overlay {
+  margin-top: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  word-wrap: break-word; /* Ensures long words wrap to the next line */
+  word-break: break-word; /* Ensures text breaks to fit the container */
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: center; /* Aligns cards to the left (change to center if needed) */
 }
 }
