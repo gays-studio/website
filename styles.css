@@ -135,11 +135,14 @@ p {
   }
 
   .mobile-divider {
-    display: block;
+    display: flex; /* Ensure it behaves as a flex container */
     height: 0.5rem; /* Adjust height to make it thinner */
+    min-height: 0.5rem; /* Ensure it doesn't collapse to zero height */
     width: 100%; /* Span across the full width */
-    background-color:#ffffff;
+    background-color: #ffffff;
     position: relative;
+    align-items: center; /* Center any child content vertically */
+    justify-content: center; /* Center any child content horizontally */
 }
 
 .member-card .info-overlay {
