@@ -14,6 +14,7 @@ body, html {
 #quotes{
 
 font-size: 1.2rem;
+}
 /* #quotes{
 
 font-size: 3rem;
@@ -215,4 +216,4 @@ p {
   gap: 20px; /* Adds spacing between cards */
   justify-content: center; /* Aligns cards to the left (change to center if needed) */
 }
-}
+
