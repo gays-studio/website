@@ -4,6 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: "DM Sans","Figtree", "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #0f1114;
 }
 *,
 *::before,
@@ -27,9 +28,7 @@ font-size: 3rem;
 }
 
 .gradient-background {
-    background: linear-gradient(69deg,#fe9494,#ffc783,#fff683,#69cb86,#83a8ff,#c56ad4);
-    background-size: 69420% 69420%;
-    animation: gradient-animation 36s ease infinite;
+    background-color: #0f1114;
   }
   .bruh{
 
@@ -68,10 +67,11 @@ font-size: 3rem;
 .left-content {
     text-align: center;
     width: 30%;
-  /*  background-color: #f4f4f4; /* Light grey background */ 
+    background: linear-gradient(69deg,#fe9494,#ffc783,#fff683,#69cb86,#83a8ff,#c56ad4);
+    background-size: 69420% 69420%;
+    animation: gradient-animation 36s ease infinite;
     padding: 25px;
     box-sizing: border-box;
-   /* border-right: 5px solid #ffffff; */
 }
 
 .mobile-divider {
@@ -101,7 +101,7 @@ p {
     width: 5px;
     min-height:100vh;
     height:155%;
-    background-color: #ffffff; /* Vertical divider color */
+    background-color: #313338;
 }
 
 
@@ -132,7 +132,7 @@ p {
     height: 0.5rem;
     min-height: 0.5rem;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #313338;
     position: relative;
     align-items: center;
     justify-content: center;
