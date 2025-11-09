@@ -127,95 +127,203 @@ p {
       font-size: 1.4rem;
   }
 
-.member-cards {
-    display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center cards */
-    width: 100%; /* Full width */
-    gap: 20px; /* Add spacing between cards */
-  }
-
   .mobile-divider {
-    display: flex; /* Ensure it behaves as a flex container */
-    height: 0.5rem; /* Adjust height to make it thinner */
-    min-height: 0.5rem; /* Ensure it doesn't collapse to zero height */
-    width: 100%; /* Span across the full width */
+    display: flex;
+    height: 0.5rem;
+    min-height: 0.5rem;
+    width: 100%;
     background-color: #ffffff;
     position: relative;
-    align-items: center; /* Center any child content vertically */
-    justify-content: center; /* Center any child content horizontally */
-}
-
-.member-card .info-overlay {
-  width: 90%; /* Ensure overlay fits */
-  font-size: 0.9rem; /* Adjust font size for readability */
-}
-  .member-card {
-    overflow-y: auto; 
-      max-height: 650px; /* Adjust the max height for mobile view */
-      width: 100%; /* Ensures the card takes up available space */
-      max-width:none;
-      flex: 1 1 auto; /* Flex item takes available space */
-      margin: 10px 0; /* Adds spacing between cards */
-      display: flex;
-      flex-direction: column; /* Ensures content inside the card stacks vertically */
-      align-items: center; /* Centers content inside each card */
+    align-items: center;
+    justify-content: center;
   }
 
-  .member-card iframe {
-      width: 100%; /* Ensures the iframe fills the card's width */
-      height: auto; /* Maintains aspect ratio */
-      max-width: 340px; /* Ensures iframe doesn't exceed 340px */
-  }
 }
 
+
+/* Member Cards - Discord Profile Style */
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px 0;
+}
 
 .member-card {
+  background-color: #18191c;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 340px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Banner */
+.profile-banner {
+  width: 100%;
+  height: 120px;
   position: relative;
-  width: 100%; /* Ensure the card takes up available width */
-  max-width: 340px; /* Limit the max width */
-  flex: 1 1 calc(30% - 25px); /* Flex item takes available space */
-  margin: 10px; /* Adds spacing between cards */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
 }
 
-.member-card iframe {
-  width: 100%; /* Ensures iframe fills the card's width */
-  height: auto;
-  max-width: 340px; /* Ensures iframe doesn't exceed 340px */
-}
-
-
-.member-card img {
-  width: 100%; /* Ensures image fills the card's width */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.member-card .info-overlay {
-  margin-top: 10px;
+/* Profile Content */
+.profile-content {
   position: relative;
-  width: 90%;
-  max-width: 300px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  word-wrap: break-word; /* Ensures long words wrap to the next line */
-  word-break: break-word; /* Ensures text breaks to fit the container */
+  padding: 16px;
+  padding-top: 70px;
 }
 
-.member-cards {
+/* Profile Avatar */
+.profile-avatar {
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 6px solid #18191c;
+  overflow: hidden;
+  background-color: #18191c;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Status Badge */
+.status-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #23a55a;
+  border: 4px solid #18191c;
+  border-radius: 50%;
+}
+
+/* Profile Info */
+.profile-info {
+  color: #dbdee1;
+}
+
+.profile-header {
+  margin-bottom: 16px;
+}
+
+.profile-name {
+  color: #f2f3f5;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.profile-pronouns {
+  color: #b5bac1;
+  font-size: 14px;
+}
+
+/* Profile Sections */
+.profile-section {
+  margin-bottom: 16px;
+}
+
+.profile-section h3 {
+  color: #f2f3f5;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+}
+
+.profile-section p {
+  color: #dbdee1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Role Tags */
+.role-tags {
   display: flex;
-  flex-wrap: wrap; /* Allows the cards to wrap onto the next line if necessary */
-  gap: 20px; /* Adds spacing between cards */
-  justify-content: center; /* Aligns cards to the left (change to center if needed) */
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.role-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #5865f2;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: #2b2d31;
+  border-radius: 6px;
+  color: #dbdee1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #35373c;
+  color: #ffffff;
+}
+
+.social-link svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.social-link span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 550px) {
+  .member-cards {
+    gap: 16px;
+  }
+
+  .member-card {
+    max-width: 100%;
+  }
+
+  .profile-name {
+    font-size: 18px;
+  }
+
+  .social-link span {
+    font-size: 13px;
+  }
 }
