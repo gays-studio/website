@@ -122,6 +122,8 @@ p {
   .left-content, .right-content {
       width: 100%; /* Take full width */
       text-align: center;
+      position: static; /* Disable sticky on mobile */
+      height: auto; /* Allow natural height */
   }
 
   .divider {
