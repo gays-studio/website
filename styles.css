@@ -25,6 +25,7 @@ font-size: 3rem;
     display: flex;
     flex-direction: row; 
     min-height: 100vh;
+    gap: 0;
 }
 
 .gradient-background {
@@ -71,6 +72,7 @@ font-size: 3rem;
     background-size: 69420% 69420%;
     animation: gradient-animation 36s ease infinite;
     padding: 25px;
+    margin: 0;
     box-sizing: border-box;
     position: sticky;
     top: 0;
@@ -89,6 +91,7 @@ p, h1,h2 {
 .right-content {
   width: 70%;
   padding: 25px;
+  margin: 0;
   box-sizing: border-box;
   /*  background-color:#b37682; */
 }
@@ -103,10 +106,13 @@ p {
 }
 .divider {
     width: 5px;
-    background-color: #313338;
+    background-color: #ffffff;
     position: sticky;
     top: 0;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
 }
 
 
@@ -139,7 +145,7 @@ p {
     height: 0.5rem;
     min-height: 0.5rem;
     width: 100%;
-    background-color: #313338;
+    background-color: #ffffff;
     position: relative;
     align-items: center;
     justify-content: center;
