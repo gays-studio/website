@@ -72,6 +72,10 @@ font-size: 3rem;
     animation: gradient-animation 36s ease infinite;
     padding: 25px;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .mobile-divider {
@@ -100,6 +104,9 @@ p {
 .divider {
     width: 5px;
     background-color: #313338;
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 
